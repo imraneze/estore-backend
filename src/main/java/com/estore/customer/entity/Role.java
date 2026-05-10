@@ -1,4 +1,6 @@
 package com.estore.customer.entity;
 
-public class Role {
+public enum Role {
+    USER,
+    ADMIN
 }

@@ -1,5 +1,6 @@
 package com.estore.customer.dto;
 
+import com.estore.customer.entity.Role;
 import lombok.*;
 
 @Getter @Setter
@@ -10,4 +11,5 @@ public class UserResponse {
     private String firstName;
     private String lastName;
     private String email;
+    private Role role;
 }

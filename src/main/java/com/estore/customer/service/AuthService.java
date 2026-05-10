@@ -22,7 +22,7 @@ public class AuthService {
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
                 .email(request.getEmail())
-                .password(request.getPassword()) // plain text for now, hashing is a bonus
+                .password(request.getPassword())
                 .build();
 
         return toResponse(userRepository.save(user));
@@ -45,6 +45,7 @@ public class AuthService {
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .email(user.getEmail())
+                .role(user.getRole())
                 .build();
     }
 }
